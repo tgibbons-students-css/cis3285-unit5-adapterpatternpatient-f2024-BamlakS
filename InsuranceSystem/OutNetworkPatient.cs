@@ -34,17 +34,17 @@ namespace Unit5_AdapterPatternPatient_Blazor.InsuranceSystem
             return percent;
         }
 
-        // returns "yes" as a string if covered.
-        public string IsCovered(string patientName, int policyNumber)
+        // returns "true" as a string if covered.
+        public bool IsCovered(string patientName, int policyNumber)
         {
-            if ((patientName == Name) && (policyNumber == PolicyNumber))
-            {
-                return "yes";
-            }
-            else
-            {
-                return "no";
-            }
+            return ((patientName == Name) && (policyNumber == PolicyNumber))
+            //{
+            //    return "yes";
+            //}
+            //else
+            //{
+            //    return "no";
+            //}
         }
 
         public string getPatientName()
